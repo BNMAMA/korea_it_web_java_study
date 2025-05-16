@@ -17,7 +17,7 @@ public class If {
             System.out.println("탑승함");
 
         }
-        //킼가 120 이상이고 어른이 아니면 탑승가능
+        //키가 120 이상이고 어른이 아니면 탑승가능
         boolean isAdult = false;
         if (height >= 120 && !isAdult) {
             System.out.println("탑승 가능");
