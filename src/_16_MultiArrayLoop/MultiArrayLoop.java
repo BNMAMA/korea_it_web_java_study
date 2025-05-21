@@ -14,12 +14,12 @@ public class MultiArrayLoop {
         //seats[1].length => 5
 
 
-        for (int i = 0; i < seats.length; i++) { //세로
-            for (int j = 0; j < seats[i].length; j++) { //가로
-                System.out.print(seats[i][j] + " ");
-            }
-            System.out.println();
-        }
+//        for (int i = 0; i < seats.length; i++) { //세로
+//            for (int j = 0; j < seats[i].length; j++) { //가로
+//                System.out.print(seats[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
 //
 //        String[][] imaxSeats = new String[10][15];
 //        String [] eng = {"A","B","C","D","E","F","G","H","I","J"};
@@ -29,46 +29,38 @@ public class MultiArrayLoop {
 //                System.out.print(imaxSeats[i][j] + " ");
 //            }
 //            System.out.println();
-    }
+//            }
     //다차원 배열 합 구하기
     //3x3 크기 1부터 홀수만 차례대로 대입하고 출력해서 확인
     //그 수들의 합 구하기
 
     // 홀수만 다 대입
+
+
     int[][] arr = new int[3][3];
     int num = 1;
-
-    fori
-
-
-    {
+        for (int i = 0; i < arr.length; i++) {
         for (int j = 0; j < arr[i].length; j++) {
             arr[i][j] = num;
             num += 2;
-            System.out.print([i][j] + " ");
+
         }
-        System.out.println();
     }
-         System.out.println();
-        for(
-    int i = 0;
-    i<arr.length;i++)
 
-    {
-        for (int j = 0; j < arr[i].length; j++) {
-            System.out.print([i][j] + " ");
-
-        }
-        System.out.println();
-
-        int sum = 0;
+    // 출력 확인
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                sum += arr[i][j];
-            }
-
+        for (int j = 0; j < arr[i].length; j++) {
+            System.out.print(arr[i][j] + " ");
         }
-
-        System.out.println("합계는 " + sum);
+        System.out.println();
     }
-}
+    int sum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+        for (int j = 0; j < arr[i].length; j++) {
+            sum += arr[i][j];
+        }
+    }
+        System.out.println("합계는" + sum);
+
+}}
