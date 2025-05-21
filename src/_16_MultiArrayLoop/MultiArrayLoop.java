@@ -37,9 +37,9 @@ public class MultiArrayLoop {
     // 홀수만 다 대입
     int[][] arr = new int[3][3];
     int num = 1;
-        for(
-    int i = 0;
-    i<arr.length;i++)
+
+    fori
+
 
     {
         for (int j = 0; j < arr[i].length; j++) {
