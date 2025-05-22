@@ -35,6 +35,7 @@ public class Scanner01 {
 //        String name;
 
         //두개 입력 받고 출력
+        System.out.println("나이와 이름을 입력해주세요");
         int age = scanner.nextInt();
         scanner.nextLine();
         String name = scanner.nextLine();
