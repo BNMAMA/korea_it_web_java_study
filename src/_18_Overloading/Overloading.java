@@ -27,18 +27,26 @@ public class Overloading {
     }
 
     public static void PrintInfo(String name, int age) {
-        System.out.println("이름은" + name + "이고" + " 나이는" + age + "입니다");
+        System.out.println("이름은" + name + "이고" + ", 나이는" + age + "입니다");
 
     }
     public static void PrintInfo(String name, int age, String email) {
-        System.out.println("이름은" + name + "나이는" + age + "이고" + " 이메일은" + email);
+        System.out.println("이름은" + name + "이고, 나이는" + age + "이고" + ", 이메일은" + email);
 
     }
 
-    public static void add(int number1, int number2) {
-        int result1 =
-    }
+    public static void add(int a, int b) {
+        System.out.println(a + "+" + b + "=" + (a + b));
 
+    }
+    public static void add(double a, double b) {
+        System.out.println(a + " + " + b + " = " + (a + b));
+
+    }
+    public static void add(String strNum1, String strNum2) {
+        System.out.println(strNum1 + " + " + strNum2 + " = " + (Integer.parseInt(strNum1) + Integer.parseInt(strNum2)));
+
+    }
     public static void main(String[] args) {
         //메소드 오버로딩
         //같은 이름의 메소드를 여러 개 선언
@@ -49,7 +57,14 @@ public class Overloading {
         System.out.println(getPower("4"));
         System.out.println(getPowerByExp(2, 4));
         System.out.println();
-        System.out.println(PrintInfo("김소현"));
+        PrintInfo("김소현");
+        PrintInfo("김소현", 26);
+        PrintInfo("김소현", 26, "ksuyeon");
+
+        System.out.println();
+        add(3, 3);
+        add(1.2, 3.4);
+        add("4", "5");
 
 
         //문제
